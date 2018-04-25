@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/todo-api.csproj"
+                "${workspaceFolder}/src/todo-api/todo-api.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
