@@ -38,11 +38,18 @@ namespace todo_api
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseSwagger();
-            app.UseSwaggerUI(cfg=>{
-                cfg.SwaggerEndpoint("/swagger/v1/swagger.json", "Todo API v1");
-            });
-            app.UseMvc();
+            else{
+                app.UseHsts();
+            }
+            app.UseHttpsRedirection();
+            EnableSwagger(app);
+	        app.UseMvc();
         }
+
+	    private static void EnableSwagger(IApplicationBuilder app)
+	    {
+		    app.UseSwagger();
+		    app.UseSwaggerUI(cfg => { cfg.SwaggerEndpoint("/swagger/v1/swagger.json", "Todo API v1"); });
+	    }
     }
 }
