@@ -1,44 +1,49 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace todo_api.Controllers
+namespace todo_api.Todos
 {
     [Route("api/[controller]")]
-    public class ValuesController : Controller
+    public class TodosController : Controller
     {
-        // GET api/values
+	    private readonly ITodoService _todoService;
+
+	    public TodosController(ITodoService todoService)
+	    {
+		    _todoService = todoService;
+	    }
+        // GET api/todos
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<IEnumerable<Todo>> Get()
         {
-            return new string[] { "value1", "value2" };
+	        return await _todoService.GetAll();
         }
 
-        // GET api/values/5
+        // GET api/todos/5
         [HttpGet("{id}")]
         public string Get(int id)
         {
             return "value";
         }
 
-        // POST api/values
+        // POST api/todos
         [HttpPost]
         public void Post([FromBody]string value)
         {
         }
 
-        // PUT api/values/5
+        // PUT api/todos/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody]string value)
         {
         }
 
-        // DELETE api/values/5
+        // DELETE api/todos/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
         }
     }
+
 }
