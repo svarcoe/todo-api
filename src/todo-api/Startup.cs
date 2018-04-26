@@ -25,7 +25,7 @@ namespace todo_api
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddSwaggerGen(c=>{
-                c.SwaggerDoc("v1", new Info { Title = "Todo API", Version = "v1" });
+				c.SwaggerDoc("v1", new Info { Title = "Todo API", Version = "v1" });
             });
 	        _log.LogInformation("Done configuring services");
         }
@@ -33,12 +33,9 @@ namespace todo_api
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
             app.UseHttpsRedirection();
             EnableSwagger(app);
+	        app.UseMiddleware<ErrorHandlingMiddleware>();
 	        app.UseMvc();
 			_log.LogInformation("Done configuring application builder.");
         }
@@ -46,7 +43,10 @@ namespace todo_api
 	    private void EnableSwagger(IApplicationBuilder app)
 	    {
 		    app.UseSwagger();
-		    app.UseSwaggerUI(cfg => { cfg.SwaggerEndpoint("/swagger/v1/swagger.json", "Todo API v1"); });
+		    app.UseSwaggerUI(cfg =>
+		    {
+			    cfg.SwaggerEndpoint("/swagger/v1/swagger.json", "Todo API v1");
+		    });
 			_log.LogDebug("Swagger enabled.");
 	    }
     }
