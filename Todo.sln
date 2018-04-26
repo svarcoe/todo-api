@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "todo-api", "src\todo-api\todo-api.csproj", "{8D0E704D-7230-49AB-932D-737D577DB63E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todo-db", "todo-db\todo-db.csproj", "{8E99D4A9-3F2E-49A5-AC30-483970E20179}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8D0E704D-7230-49AB-932D-737D577DB63E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D0E704D-7230-49AB-932D-737D577DB63E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D0E704D-7230-49AB-932D-737D577DB63E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E99D4A9-3F2E-49A5-AC30-483970E20179}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E99D4A9-3F2E-49A5-AC30-483970E20179}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E99D4A9-3F2E-49A5-AC30-483970E20179}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E99D4A9-3F2E-49A5-AC30-483970E20179}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
