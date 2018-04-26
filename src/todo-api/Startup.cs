@@ -15,10 +15,13 @@ namespace todo_api
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
+	    private readonly ILogger<Startup> _log;
+
+	    public Startup(IConfiguration configuration, ILoggerFactory loggerFactory)
+	    {
+		    _log = loggerFactory.CreateLogger<Startup>();
+		    Configuration = configuration;
+	    }
 
         public IConfiguration Configuration { get; }
 
@@ -29,6 +32,7 @@ namespace todo_api
             services.AddSwaggerGen(c=>{
                 c.SwaggerDoc("v1", new Info { Title = "Todo API", Version = "v1" });
             });
+	        _log.LogInformation("Done configuring services");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,18 +42,17 @@ namespace todo_api
             {
                 app.UseDeveloperExceptionPage();
             }
-            else{
-                app.UseHsts();
-            }
             app.UseHttpsRedirection();
             EnableSwagger(app);
 	        app.UseMvc();
+			_log.LogInformation("Done configuring application builder.");
         }
 
-	    private static void EnableSwagger(IApplicationBuilder app)
+	    private void EnableSwagger(IApplicationBuilder app)
 	    {
 		    app.UseSwagger();
 		    app.UseSwaggerUI(cfg => { cfg.SwaggerEndpoint("/swagger/v1/swagger.json", "Todo API v1"); });
+			_log.LogDebug("Swagger enabled.");
 	    }
     }
 }

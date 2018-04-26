@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore;
+﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using NLog.Web;
 
 namespace todo_api
 {
@@ -20,6 +15,15 @@ namespace todo_api
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
+	            .ConfigureLogging((hostingContext, logging) =>
+	            {
+		            logging.ClearProviders();
+		            logging.SetMinimumLevel(LogLevel.Trace);
+		            logging.AddConfiguration(hostingContext.Configuration.GetSection("Logging"));
+		            logging.AddConsole();
+		            logging.AddDebug();
+	            })
+                .UseNLog()
                 .Build();
     }
 }
