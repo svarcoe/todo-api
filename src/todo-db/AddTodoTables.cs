@@ -1,5 +1,4 @@
-﻿using System;
-using FluentMigrator;
+﻿using FluentMigrator;
 
 namespace todo_db
 {
@@ -8,7 +7,7 @@ namespace todo_db
 	{
 		public override void Up()
 		{
-			Create.Table("Todos")
+            Create.Table("Todos")
 				.WithIdColumn()
 				.WithTimeStamps()
 				.WithColumn("Name").AsString().NotNullable()

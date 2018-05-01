@@ -2,9 +2,18 @@ version: '3'
 services:
   migrator:
     build: ./todo-db
+    depends_on:
+      - db
     environment:
-    - db_server
+    - database__server=db
+    - database__name=todo
+    - database__user=sa
+    - database__password=1nter@dmin
+    restart: on-failure
   db:
     image: "microsoft/mssql-server-linux"
+    ports:
+    - 1433:1433
     environment:
     - ACCEPT_EULA=Y
+    - SA_PASSWORD=1nter@dmin
