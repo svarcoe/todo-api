@@ -1,0 +1,10 @@
+version: '3'
+services:
+  migrator:
+    build: ./todo-db
+    environment:
+    - db_server
+  db:
+    image: "microsoft/mssql-server-linux"
+    environment:
+    - ACCEPT_EULA=Y
