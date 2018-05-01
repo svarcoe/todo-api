@@ -5,4 +5,10 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="FluentMigrator" Version="2.0.7" />
+    <PackageReference Include="FluentMigrator.Runner" Version="2.0.7" />
+    <PackageReference Include="FluentMigrator.Runner.SqlServer" Version="2.0.7" />
+  </ItemGroup>
+
 </Project>

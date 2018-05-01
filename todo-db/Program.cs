@@ -2,8 +2,9 @@
 using FluentMigrator.Runner.Announcers;
 using FluentMigrator.Runner.Initialization;
 using FluentMigrator.Runner.Processors;
-using FluentMigrator.Runner.Processors.SQLite;
 using System;
+using FluentMigrator;
+using FluentMigrator.Runner.Processors.SqlServer;
 
 namespace todo_db
 {
@@ -16,14 +17,15 @@ namespace todo_db
 			ConsoleAnnouncer announcer = new ConsoleAnnouncer()
 			{
 				ShowSql = true,
+				ShowElapsedTime = true
 			};
 
 			// Processor specific options (usually none are needed)
 			ProcessorOptions options = new ProcessorOptions();
-
+			
 			// Initialize the DB-specific processor
-			SQLiteProcessorFactory processorFactory = new SQLiteProcessorFactory();
-			FluentMigrator.IMigrationProcessor processor = processorFactory.Create(null, announcer, options);
+			SqlServerProcessorFactory processorFactory = new SqlServerProcessorFactory();
+			IMigrationProcessor processor = processorFactory.Create(null, announcer, options);
 
 			// Configure the runner
 			RunnerContext context = new RunnerContext(announcer)
