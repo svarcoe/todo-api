@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Logging;
 using NLog.Web;
 
-namespace todo_api
+namespace Todo.Api
 {
     public class Program
     {

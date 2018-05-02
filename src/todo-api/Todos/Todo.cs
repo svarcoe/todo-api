@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace todo_api.Todos
+namespace Todo.Api.Todos
 {
 	public class Todo
 	{

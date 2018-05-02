@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
 using Dapper;
+using todo_api.Todos;
 
-namespace todo_api.Todos
+namespace Todo.Api.Todos
 {
 	public interface ITodoService
 	{

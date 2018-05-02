@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace todo_api.Todos
+namespace Todo.Api.Todos
 {
     [Route("api/[controller]")]
     public class TodosController : Controller

@@ -1,4 +1,4 @@
-﻿namespace todo_api
+﻿namespace Todo.Api
 {
     public class ServerOptions
     {

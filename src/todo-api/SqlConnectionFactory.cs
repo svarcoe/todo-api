@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Options;
 using todo_api.Todos;
 
-namespace todo_api
+namespace Todo.Api
 {
     public class SqlConnectionFactory : ISqlConnectionFactory
     {

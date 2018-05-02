@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 
-namespace todo_api
+namespace Todo.Api
 {
 	public class ErrorHandlingMiddleware
 	{
