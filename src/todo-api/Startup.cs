@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.Swagger;
+using todo_api.Todos;
 
 namespace todo_api
 {
@@ -26,6 +27,9 @@ namespace todo_api
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.Configure<ServerOptions>(Configuration.GetSection("server"));
+            services.Configure<DatabaseOptions>(Configuration.GetSection("database"));
+            services.AddTransient<ITodoService, TodoService>();
+            services.AddSingleton<ISqlConnectionFactory, SqlConnectionFactory>();
             services.AddSwaggerGen(c=>{
 				c.SwaggerDoc("v1", new Info { Title = "Todo API", Version = "v1" });
             });
@@ -45,6 +49,7 @@ namespace todo_api
         private void ConfigureHttpsRedirection(IApplicationBuilder app)
         {
             IOptions<ServerOptions> serverOptions = app.ApplicationServices.GetRequiredService<IOptions<ServerOptions>>();
+            _log.LogDebug("HttpsRedirectionDisabled set to {0}", serverOptions.Value.HttpsRedirectionDisabled);
             if (!serverOptions.Value.HttpsRedirectionDisabled)
             {
                 app.UseHttpsRedirection();

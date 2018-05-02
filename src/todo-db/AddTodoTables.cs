@@ -7,11 +7,11 @@ namespace todo_db
 	{
 		public override void Up()
 		{
-            Create.Table("Todos")
+            Create.Table("Todo")
 				.WithIdColumn()
 				.WithTimeStamps()
 				.WithColumn("Name").AsString().NotNullable()
-				.WithColumn("IsDone").AsBoolean().WithDefaultValue(false);
+				.WithColumn("IsComplete").AsBoolean().WithDefaultValue(false);
 		}
 
 		public override void Down()

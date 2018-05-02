@@ -5,7 +5,11 @@ services:
     depends_on:
       - db
     environment:
-      - HttpsRedirectionDisabled
+      - server__HttpsRedirectionDisabled=True   
+      - database__server=db
+      - database__name=todo
+      - database__user=sa
+      - database__password=P@ssword1
     ports:
       - 80:80
   migrator:
@@ -16,7 +20,7 @@ services:
     - database__server=db
     - database__name=todo
     - database__user=sa
-    - database__password=1nter@dmin
+    - database__password=P@ssword1
     restart: on-failure
   db:
     image: "microsoft/mssql-server-linux"
@@ -24,4 +28,4 @@ services:
     - 1433:1433
     environment:
     - ACCEPT_EULA=Y
-    - SA_PASSWORD=1nter@dmin
+    - SA_PASSWORD=P@ssword1

@@ -22,27 +22,30 @@ namespace todo_api.Todos
 
         // GET api/todos/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<Todo> Get(int id)
         {
-            return "value";
+            return await _todoService.Get(id);
         }
 
         // POST api/todos
         [HttpPost]
-        public void Post([FromBody]string value)
+        public async Task<int> Post([FromBody]Todo value)
         {
+            return await _todoService.Insert(value);
         }
 
         // PUT api/todos/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        public async Task Put(int id, [FromBody]Todo value)
         {
+            await _todoService.Update(id, value);
         }
 
         // DELETE api/todos/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task Delete(int id)
         {
+            await _todoService.Delete(id);
         }
     }
 
