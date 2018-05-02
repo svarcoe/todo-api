@@ -6,10 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Ben.Demystifier" Version="0.1.1" />
     <PackageReference Include="Dapper" Version="1.50.4" />
     <PackageReference Include="Dapper.SimpleCRUD" Version="1.13.0" />
