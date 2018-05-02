@@ -1,6 +1,5 @@
 ﻿using System.Data.SqlClient;
 using Microsoft.Extensions.Options;
-using todo_api.Todos;
 
 namespace Todo.Api
 {

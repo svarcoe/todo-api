@@ -1,6 +1,6 @@
 ﻿using System.Data.SqlClient;
 
-namespace todo_api.Todos
+namespace Todo.Api
 {
     public interface ISqlConnectionFactory
     {
