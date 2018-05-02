@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace todo_api
@@ -24,6 +25,7 @@ namespace todo_api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.Configure<ServerOptions>(Configuration.GetSection("server"));
             services.AddSwaggerGen(c=>{
 				c.SwaggerDoc("v1", new Info { Title = "Todo API", Version = "v1" });
             });
@@ -33,14 +35,23 @@ namespace todo_api
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            app.UseHttpsRedirection();
+            ConfigureHttpsRedirection(app);
             EnableSwagger(app);
 	        app.UseMiddleware<ErrorHandlingMiddleware>();
 	        app.UseMvc();
 			_log.LogInformation("Done configuring application builder.");
         }
 
-	    private void EnableSwagger(IApplicationBuilder app)
+        private void ConfigureHttpsRedirection(IApplicationBuilder app)
+        {
+            IOptions<ServerOptions> serverOptions = app.ApplicationServices.GetRequiredService<IOptions<ServerOptions>>();
+            if (!serverOptions.Value.HttpsRedirectionDisabled)
+            {
+                app.UseHttpsRedirection();
+            }
+        }
+
+        private void EnableSwagger(IApplicationBuilder app)
 	    {
 		    app.UseSwagger();
 		    app.UseSwaggerUI(cfg =>

@@ -1,5 +1,13 @@
 version: '3'
 services:
+  web:
+    build: ./todo-api
+    depends_on:
+      - db
+    environment:
+      - HttpsRedirectionDisabled
+    ports:
+      - 80:80
   migrator:
     build: ./todo-db
     depends_on:
