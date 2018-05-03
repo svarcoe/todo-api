@@ -57,7 +57,7 @@ namespace Todo.Api
                 app.UseHttpsRedirection();
             }
         }
-
+                                
         private void EnableSwagger(IApplicationBuilder app)
 	    {
 		    app.UseSwagger();
