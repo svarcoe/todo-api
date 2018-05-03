@@ -26,6 +26,7 @@ namespace Todo.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddCors();
             services.Configure<ServerOptions>(Configuration.GetSection("server"));
             services.Configure<DatabaseOptions>(Configuration.GetSection("database"));
             services.AddTransient<ITodoService, TodoService>();
@@ -42,6 +43,7 @@ namespace Todo.Api
             ConfigureHttpsRedirection(app);
             EnableSwagger(app);
 	        app.UseMiddleware<ErrorHandlingMiddleware>();
+            app.UseCors(builder => builder.WithOrigins("http://localhost:4200").AllowAnyMethod());
 	        app.UseMvc();
 			_log.LogInformation("Done configuring application builder.");
         }
