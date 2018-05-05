@@ -9,6 +9,6 @@ export class TodoService {
   constructor(
     private http: HttpClient) { }
   getTodos(): Observable<Todo[]> {
-    return this.http.get<Todo[]>('http://localhost/api/todos');
+    return this.http.get<Todo[]>('https://localhost:5001/api/todos');
   }
 }
