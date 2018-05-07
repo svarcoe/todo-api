@@ -6,6 +6,5 @@ RUN dotnet restore /app/todo-api.csproj
 COPY . /app
 WORKDIR /app
 
-EXPOSE 443
-EXPOSE 80
-ENTRYPOINT [ "dotnet", "run", "todo-api.dll" ]
+EXPOSE 5001
+ENTRYPOINT [ "dotnet", "run"]

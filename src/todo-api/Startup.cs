@@ -41,6 +41,7 @@ namespace Todo.Api
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             ConfigureHttpsRedirection(app);
+            
             EnableSwagger(app);
 	        app.UseMiddleware<ErrorHandlingMiddleware>();
             app.UseCors(builder => builder.WithOrigins("http://localhost:4200").AllowAnyMethod());
