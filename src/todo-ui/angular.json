@@ -23,7 +23,8 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "poll": 1000
           },
           "configurations": {
             "production": {
@@ -90,7 +91,12 @@
               "**/node_modules/**"
             ]
           }
-        }
+        },
+        // "browser": {
+        //   "builder": 
+        //   "options":{
+        //   }
+        // }
       }
     },
     "todo-ui-e2e": {
