@@ -1,8 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule, MatListModule} from '@angular/material';
+import {MatButtonModule, 
+        MatCheckboxModule, 
+        MatListModule, 
+        MatToolbar, 
+        MatToolbarModule, 
+        MatCardModule,
+        MatIconModule} from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
@@ -18,7 +24,8 @@ import { TodoService } from './todo.service';
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatButtonModule, MatCheckboxModule, MatListModule
+    MatButtonModule, MatCheckboxModule, MatListModule,
+    MatToolbarModule, MatCardModule, MatIconModule
   ],
   providers: [TodoService],
   bootstrap: [AppComponent]

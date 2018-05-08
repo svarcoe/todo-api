@@ -1,0 +1,7 @@
+.right-toolbar-content {
+    float: right;
+}
+.left-toolbar-content {
+    flex: 1 1 auto;
+    float: left;
+}

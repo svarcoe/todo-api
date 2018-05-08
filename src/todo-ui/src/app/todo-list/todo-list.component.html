@@ -1,5 +1,5 @@
-<ul>
-  <li *ngFor="let todo of todos">
-    <span>{{todo.name}}</span>
-  </li>
-</ul>
+<mat-card>
+  <mat-selection-list role="list">
+    <mat-list-option role="listitem" *ngFor="let todo of todos">{{todo.name}}</mat-list-option>
+  </mat-selection-list> 
+</mat-card>
