@@ -28,7 +28,7 @@ services:
     volumes:
       - ./todo-api:/app
     working_dir: /app
-    entrypoint: dotnet watch run --no-restore
+    entrypoint: dotnet watch run
   migrator:
     build: ./todo-db
     depends_on:
@@ -41,6 +41,8 @@ services:
     restart: on-failure
   db:
     image: "microsoft/mssql-server-linux"
+    logging:
+      driver: none
     ports:
     - 1433:1433
     environment:
