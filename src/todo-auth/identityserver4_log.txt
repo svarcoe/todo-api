@@ -1,0 +1,141 @@
+2018-07-17 21:24:19.092 -07:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-07-17 21:24:19.133 -07:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-07-17 21:24:19.142 -07:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-07-17 21:24:19.146 -07:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-07-17 21:24:19.150 -07:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-07-17 21:24:20.558 -07:00 [WRN] The 'bool' property 'UserEditable' on entity type 'IdentityExpressClaimType' is configured with a database-generated default. This default will always be used when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead so that the default will only be used when the property value is 'null'.
+2018-07-17 21:24:49.257 -07:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-07-17 21:24:49.297 -07:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-07-17 21:24:49.303 -07:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-07-17 21:24:49.312 -07:00 [DBG] Start discovery request
+2018-07-17 21:24:49.702 -07:00 [DBG] Found ["openid","profile"] as all scopes in database
+2018-07-17 21:25:06.913 -07:00 [FTL] ****** Using non-production Community Edition ******
+2018-07-17 21:25:14.163 -07:00 [FTL] ****** Using non-production Community Edition ******
+2018-07-17 21:25:27.493 -07:00 [FTL] ****** Using non-production Community Edition ******
+2018-07-17 21:25:41.729 -07:00 [FTL] ****** Using non-production Community Edition ******
+2018-07-17 21:34:00.063 -07:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-07-17 21:34:00.096 -07:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-07-17 21:34:00.100 -07:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-07-17 21:34:00.103 -07:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-07-17 21:34:00.106 -07:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-07-17 21:34:00.310 -07:00 [FTL] Application startup exception
+System.TypeLoadException: Could not load type 'Microsoft.EntityFrameworkCore.Infrastructure.Internal.SqliteOptionsExtension' from assembly 'Microsoft.EntityFrameworkCore.Sqlite, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+   at IdentityExpress.Manager.Api.Hosting.DbContextOptionsFactory`1.<>c.<CreateSqlite>b__1_0(SqliteDbContextOptionsBuilder options)
+   at Microsoft.EntityFrameworkCore.SqliteDbContextOptionsBuilderExtensions.UseSqlite(DbContextOptionsBuilder optionsBuilder, String connectionString, Action`1 sqliteOptionsAction)
+   at Microsoft.EntityFrameworkCore.SqliteDbContextOptionsBuilderExtensions.UseSqlite[TContext](DbContextOptionsBuilder`1 optionsBuilder, String connectionString, Action`1 sqliteOptionsAction)
+   at IdentityExpress.Manager.Api.Hosting.DbContextOptionsFactory`1.CreateSqlite(String connectionString)
+   at IdentityExpress.Manager.Api.SqliteConfigurationDbContext..ctor(IConfiguration configuration)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at IdentityExpress.Manager.Api.Startup.ConfigureMigrations(IServiceScope serviceScope)
+   at IdentityExpress.Manager.Api.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+   at IdentityServer4.AdminUIExtensions.UseAdminUI(IApplicationBuilder appBuilder)
+   at todo_auth.Startup.Configure(IApplicationBuilder app) in C:\code\todo-api\src\todo-auth\Startup.cs:line 112
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2018-07-17 21:36:33.180 -07:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-07-17 21:36:33.221 -07:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-07-17 21:36:33.226 -07:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-07-17 21:36:33.234 -07:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-07-17 21:36:33.238 -07:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-07-17 21:36:33.360 -07:00 [FTL] Application startup exception
+System.TypeLoadException: Could not load type 'Microsoft.EntityFrameworkCore.Infrastructure.Internal.SqliteOptionsExtension' from assembly 'Microsoft.EntityFrameworkCore.Sqlite, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+   at IdentityExpress.Manager.Api.Hosting.DbContextOptionsFactory`1.<>c.<CreateSqlite>b__1_0(SqliteDbContextOptionsBuilder options)
+   at Microsoft.EntityFrameworkCore.SqliteDbContextOptionsBuilderExtensions.UseSqlite(DbContextOptionsBuilder optionsBuilder, String connectionString, Action`1 sqliteOptionsAction)
+   at Microsoft.EntityFrameworkCore.SqliteDbContextOptionsBuilderExtensions.UseSqlite[TContext](DbContextOptionsBuilder`1 optionsBuilder, String connectionString, Action`1 sqliteOptionsAction)
+   at IdentityExpress.Manager.Api.Hosting.DbContextOptionsFactory`1.CreateSqlite(String connectionString)
+   at IdentityExpress.Manager.Api.SqliteConfigurationDbContext..ctor(IConfiguration configuration)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at IdentityExpress.Manager.Api.Startup.ConfigureMigrations(IServiceScope serviceScope)
+   at IdentityExpress.Manager.Api.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+   at IdentityServer4.AdminUIExtensions.UseAdminUI(IApplicationBuilder appBuilder)
+   at todo_auth.Startup.Configure(IApplicationBuilder app) in C:\code\todo-api\src\todo-auth\Startup.cs:line 112
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2018-07-17 21:37:43.657 -07:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-07-17 21:37:43.694 -07:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-07-17 21:37:43.698 -07:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-07-17 21:37:43.701 -07:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-07-17 21:37:43.708 -07:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-07-17 21:37:44.812 -07:00 [WRN] The 'bool' property 'UserEditable' on entity type 'IdentityExpressClaimType' is configured with a database-generated default. This default will always be used when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead so that the default will only be used when the property value is 'null'.
+2018-07-17 21:39:41.735 -07:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-07-17 21:39:41.773 -07:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-07-17 21:39:41.775 -07:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-07-17 21:39:41.779 -07:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-07-17 21:39:41.783 -07:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-07-17 21:39:41.938 -07:00 [FTL] Application startup exception
+System.TypeLoadException: Could not load type 'Microsoft.EntityFrameworkCore.Infrastructure.Internal.SqliteOptionsExtension' from assembly 'Microsoft.EntityFrameworkCore.Sqlite, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+   at IdentityExpress.Manager.Api.Hosting.DbContextOptionsFactory`1.<>c.<CreateSqlite>b__1_0(SqliteDbContextOptionsBuilder options)
+   at Microsoft.EntityFrameworkCore.SqliteDbContextOptionsBuilderExtensions.UseSqlite(DbContextOptionsBuilder optionsBuilder, String connectionString, Action`1 sqliteOptionsAction)
+   at Microsoft.EntityFrameworkCore.SqliteDbContextOptionsBuilderExtensions.UseSqlite[TContext](DbContextOptionsBuilder`1 optionsBuilder, String connectionString, Action`1 sqliteOptionsAction)
+   at IdentityExpress.Manager.Api.Hosting.DbContextOptionsFactory`1.CreateSqlite(String connectionString)
+   at IdentityExpress.Manager.Api.SqliteConfigurationDbContext..ctor(IConfiguration configuration)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at IdentityExpress.Manager.Api.Startup.ConfigureMigrations(IServiceScope serviceScope)
+   at IdentityExpress.Manager.Api.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+   at IdentityServer4.AdminUIExtensions.UseAdminUI(IApplicationBuilder appBuilder)
+   at todo_auth.Startup.Configure(IApplicationBuilder app) in C:\code\todo-api\src\todo-auth\Startup.cs:line 112
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2018-07-17 21:39:59.196 -07:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-07-17 21:39:59.233 -07:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-07-17 21:39:59.237 -07:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-07-17 21:39:59.239 -07:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-07-17 21:39:59.242 -07:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-07-17 21:39:59.411 -07:00 [FTL] Application startup exception
+System.TypeLoadException: Could not load type 'Microsoft.EntityFrameworkCore.Infrastructure.Internal.SqliteOptionsExtension' from assembly 'Microsoft.EntityFrameworkCore.Sqlite, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+   at IdentityExpress.Manager.Api.Hosting.DbContextOptionsFactory`1.<>c.<CreateSqlite>b__1_0(SqliteDbContextOptionsBuilder options)
+   at Microsoft.EntityFrameworkCore.SqliteDbContextOptionsBuilderExtensions.UseSqlite(DbContextOptionsBuilder optionsBuilder, String connectionString, Action`1 sqliteOptionsAction)
+   at Microsoft.EntityFrameworkCore.SqliteDbContextOptionsBuilderExtensions.UseSqlite[TContext](DbContextOptionsBuilder`1 optionsBuilder, String connectionString, Action`1 sqliteOptionsAction)
+   at IdentityExpress.Manager.Api.Hosting.DbContextOptionsFactory`1.CreateSqlite(String connectionString)
+   at IdentityExpress.Manager.Api.SqliteConfigurationDbContext..ctor(IConfiguration configuration)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at IdentityExpress.Manager.Api.Startup.ConfigureMigrations(IServiceScope serviceScope)
+   at IdentityExpress.Manager.Api.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+   at IdentityServer4.AdminUIExtensions.UseAdminUI(IApplicationBuilder appBuilder)
+   at todo_auth.Startup.Configure(IApplicationBuilder app) in C:\code\todo-api\src\todo-auth\Startup.cs:line 112
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()

@@ -29,6 +29,18 @@ services:
       - ./todo-api:/app
     working_dir: /app
     entrypoint: dotnet watch run
+  auth:
+    build: ./todo-auth
+    depends_on:
+      - db
+    ports:
+      - 5000:5000
+    volumes:
+      - ./todo-auth:/app
+    working_dir: /app
+    environment:    
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+    entrypoint: dotnet watch run
   migrator:
     build: ./todo-db
     depends_on:
