@@ -22,7 +22,9 @@ namespace todo_auth
         {
             return new ApiResource[]
             {
-                new ApiResource("api1", "My API #1")
+                new ApiResource("api1", "My API #1"){
+                    ApiSecrets = new List<Secret> {new Secret("scopeSecret".Sha256())}
+                }
             };
         }
 

@@ -54,8 +54,11 @@ namespace todo_auth
                 options.Events.RaiseFailureEvents = true;
                 options.Events.RaiseSuccessEvents = true;
             })
+                // .AddInMemoryClients(Config.GetClients())
+                // .AddInMemoryIdentityResources(Config.GetIdentityResources())
+                // .AddInMemoryApiResources(Config.GetApis())
                 .AddAspNetIdentity<ApplicationUser>()
-                // this adds the config data from DB (clients, resources, CORS)
+                //this adds the config data from DB (clients, resources, CORS)
                 .AddConfigurationStore(options =>
                 {
                     options.ConfigureDbContext = db =>
