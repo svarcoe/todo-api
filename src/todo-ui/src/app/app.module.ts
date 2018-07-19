@@ -14,18 +14,30 @@ import { AppComponent } from './app.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { TodoService } from './todo.service';
 
+import { OAuthModule } from 'angular-oauth2-oidc';
+import { AuthGuard } from './auth-gaurd';
+import { RouterModule } from '@angular/router';
+import { CallbackComponent } from './callback.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodoListComponent
+    TodoListComponent,
+    CallbackComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    OAuthModule.forRoot(),
     BrowserAnimationsModule,
     MatButtonModule, MatCheckboxModule, MatListModule,
-    MatToolbarModule, MatCardModule, MatIconModule
+    MatToolbarModule, MatCardModule, MatIconModule,
+    RouterModule.forRoot([
+      { path: '', component: CallbackComponent, pathMatch: 'full' },
+      { path: 'home', component: TodoListComponent, canActivate: [AuthGuard] },
+      { path: '**', redirectTo: '' }
+    ]
   ],
   providers: [TodoService],
   bootstrap: [AppComponent]
