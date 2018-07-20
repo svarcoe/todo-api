@@ -1528,3 +1528,313 @@ token: '[PII is hidden by default. Set the 'ShowPII' flag in IdentityModelEventS
 2018-07-20 07:15:25.662 +00:00 [DBG] Using Identity.Application as default scheme for forbid
 2018-07-20 07:15:27.044 +00:00 [WRN] The 'bool' property 'UserEditable' on entity type 'IdentityExpressClaimType' is configured with a database-generated default. This default will always be used when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead so that the default will only be used when the property value is 'null'.
 2018-07-20 07:15:27.747 +00:00 [WRN] Unable to bind to http://localhost:5000 on the IPv6 loopback interface: 'Error -99 EADDRNOTAVAIL address not available'.
+2018-07-20 07:30:01.676 +00:00 [WRN] No XML encryptor configured. Key "55431af0-bb66-494d-befe-b47f74df40b5" may be persisted to storage in unencrypted form.
+2018-07-20 07:30:02.140 +00:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-07-20 07:30:02.141 +00:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-07-20 07:30:02.142 +00:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-07-20 07:30:02.143 +00:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-07-20 07:30:02.145 +00:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-07-20 07:30:03.945 +00:00 [WRN] The 'bool' property 'UserEditable' on entity type 'IdentityExpressClaimType' is configured with a database-generated default. This default will always be used when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead so that the default will only be used when the property value is 'null'.
+2018-07-20 07:30:04.814 +00:00 [WRN] Unable to bind to http://localhost:5000 on the IPv6 loopback interface: 'Error -99 EADDRNOTAVAIL address not available'.
+2018-07-20 07:33:30.926 +00:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-07-20 07:33:30.968 +00:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-07-20 07:33:30.969 +00:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-07-20 07:33:30.970 +00:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-07-20 07:33:30.971 +00:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-07-20 07:33:32.532 +00:00 [WRN] The 'bool' property 'UserEditable' on entity type 'IdentityExpressClaimType' is configured with a database-generated default. This default will always be used when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead so that the default will only be used when the property value is 'null'.
+2018-07-20 07:33:33.405 +00:00 [WRN] Unable to bind to http://localhost:5000 on the IPv6 loopback interface: 'Error -99 EADDRNOTAVAIL address not available'.
+2018-07-20 07:36:49.165 +00:00 [WRN] No XML encryptor configured. Key "9acd37da-b0fb-4a72-b6bf-84e47105645a" may be persisted to storage in unencrypted form.
+2018-07-20 07:36:49.470 +00:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-07-20 07:36:49.471 +00:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-07-20 07:36:49.472 +00:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-07-20 07:36:49.473 +00:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-07-20 07:36:49.474 +00:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-07-20 07:36:51.235 +00:00 [WRN] The 'bool' property 'UserEditable' on entity type 'IdentityExpressClaimType' is configured with a database-generated default. This default will always be used when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead so that the default will only be used when the property value is 'null'.
+2018-07-20 07:36:52.029 +00:00 [WRN] Unable to bind to http://localhost:5000 on the IPv6 loopback interface: 'Error -99 EADDRNOTAVAIL address not available'.
+2018-07-20 07:44:18.902 +00:00 [WRN] No XML encryptor configured. Key "e29f20ab-c976-44b1-b928-51fa20cf0e00" may be persisted to storage in unencrypted form.
+2018-07-20 07:44:19.348 +00:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-07-20 07:44:19.349 +00:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-07-20 07:44:19.350 +00:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-07-20 07:44:19.351 +00:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-07-20 07:44:19.352 +00:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-07-20 07:44:21.453 +00:00 [WRN] The 'bool' property 'UserEditable' on entity type 'IdentityExpressClaimType' is configured with a database-generated default. This default will always be used when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead so that the default will only be used when the property value is 'null'.
+2018-07-20 07:44:22.248 +00:00 [WRN] Unable to bind to http://localhost:5000 on the IPv6 loopback interface: 'Error -99 EADDRNOTAVAIL address not available'.
+2018-07-20 07:47:05.090 +00:00 [WRN] No XML encryptor configured. Key "5b17f847-e1fc-4bca-a972-f90cd102422a" may be persisted to storage in unencrypted form.
+2018-07-20 07:47:05.417 +00:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-07-20 07:47:05.418 +00:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-07-20 07:47:05.420 +00:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-07-20 07:47:05.420 +00:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-07-20 07:47:05.422 +00:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-07-20 07:47:07.156 +00:00 [WRN] The 'bool' property 'UserEditable' on entity type 'IdentityExpressClaimType' is configured with a database-generated default. This default will always be used when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead so that the default will only be used when the property value is 'null'.
+2018-07-20 07:47:13.407 +00:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-07-20 07:47:13.445 +00:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-07-20 07:47:13.447 +00:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-07-20 07:47:13.452 +00:00 [DBG] Start discovery request
+2018-07-20 07:47:14.601 +00:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2018-07-20 07:47:39.389 +00:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2018-07-20 07:47:39.567 +00:00 [DBG] Origin http://localhost:4200 is allowed: true
+2018-07-20 07:47:39.569 +00:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2018-07-20 07:47:39.613 +00:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-07-20 07:47:39.626 +00:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-07-20 07:47:39.637 +00:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-07-20 07:47:39.644 +00:00 [DBG] Start discovery request
+2018-07-20 07:47:39.794 +00:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2018-07-20 07:47:39.806 +00:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2018-07-20 07:47:39.823 +00:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: http://localhost:4200
+2018-07-20 07:47:39.834 +00:00 [DBG] Origin http://localhost:4200 is allowed: true
+2018-07-20 07:47:39.835 +00:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2018-07-20 07:47:39.838 +00:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-07-20 07:47:39.839 +00:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-07-20 07:47:39.839 +00:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-07-20 07:47:39.839 +00:00 [DBG] Start discovery request
+2018-07-20 07:47:39.843 +00:00 [DBG] Origin http://localhost:4200 is allowed: true
+2018-07-20 07:47:39.843 +00:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2018-07-20 07:47:39.844 +00:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-07-20 07:47:39.845 +00:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-07-20 07:47:39.846 +00:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-07-20 07:47:39.856 +00:00 [DBG] Start key discovery request
+2018-07-20 07:47:39.870 +00:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2018-07-20 07:47:39.928 +00:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: http://localhost:4200
+2018-07-20 07:47:39.940 +00:00 [DBG] Origin http://localhost:4200 is allowed: true
+2018-07-20 07:47:39.940 +00:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2018-07-20 07:47:39.941 +00:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-07-20 07:47:39.942 +00:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-07-20 07:47:39.943 +00:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-07-20 07:47:39.944 +00:00 [DBG] Start key discovery request
+2018-07-20 07:47:39.983 +00:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2018-07-20 07:47:40.012 +00:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2018-07-20 07:47:40.012 +00:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-07-20 07:47:40.049 +00:00 [DBG] Start authorize request
+2018-07-20 07:47:40.125 +00:00 [DBG] No user present in authorize request
+2018-07-20 07:47:40.138 +00:00 [DBG] Start authorize request protocol validation
+2018-07-20 07:47:40.830 +00:00 [DBG] 51cdc962c31c4bdb8bff7e9385e67b0c found in database: true
+2018-07-20 07:47:40.912 +00:00 [DBG] Found ["openid","profile"] identity scopes in database
+2018-07-20 07:47:41.016 +00:00 [DBG] Found ["api1"] API scopes in database
+2018-07-20 07:47:41.049 +00:00 [DBG] Found ["openid","profile"] identity scopes in database
+2018-07-20 07:47:41.065 +00:00 [DBG] Found ["api1"] API scopes in database
+2018-07-20 07:47:41.083 +00:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-20 07:47:41.104 +00:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "51cdc962c31c4bdb8bff7e9385e67b0c",
+  "ClientName": "My SPA",
+  "RedirectUri": "http://localhost:4200",
+  "AllowedRedirectUris": [
+    "http://localhost:5002/callback.html",
+    "http://localhost:4200"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "id_token token",
+  "ResponseMode": "fragment",
+  "GrantType": "implicit",
+  "RequestedScopes": "openid profile api1",
+  "State": "22DB3ytbAw6TLoOAJs7OTSmZQGtnJr4fowEyl9iK;some-state",
+  "Nonce": "22DB3ytbAw6TLoOAJs7OTSmZQGtnJr4fowEyl9iK",
+  "Raw": {
+    "response_type": "id_token token",
+    "client_id": "51cdc962c31c4bdb8bff7e9385e67b0c",
+    "state": "22DB3ytbAw6TLoOAJs7OTSmZQGtnJr4fowEyl9iK;some-state",
+    "redirect_uri": "http://localhost:4200",
+    "scope": "openid profile api1",
+    "nonce": "22DB3ytbAw6TLoOAJs7OTSmZQGtnJr4fowEyl9iK"
+  }
+}
+2018-07-20 07:47:41.123 +00:00 [INF] Showing login: User is not authenticated
+2018-07-20 07:47:41.725 +00:00 [DBG] Start authorize request protocol validation
+2018-07-20 07:47:41.745 +00:00 [DBG] 51cdc962c31c4bdb8bff7e9385e67b0c found in database: true
+2018-07-20 07:47:41.761 +00:00 [DBG] Found ["openid","profile"] identity scopes in database
+2018-07-20 07:47:41.774 +00:00 [DBG] Found ["api1"] API scopes in database
+2018-07-20 07:47:41.780 +00:00 [DBG] Found ["openid","profile"] identity scopes in database
+2018-07-20 07:47:41.788 +00:00 [DBG] Found ["api1"] API scopes in database
+2018-07-20 07:47:41.788 +00:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-20 07:47:41.800 +00:00 [DBG] 51cdc962c31c4bdb8bff7e9385e67b0c found in database: true
+2018-07-20 07:48:08.603 +00:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-07-20 07:48:08.963 +00:00 [INF] {
+  "Name": "User Login Failure",
+  "Category": "Authentication",
+  "EventType": "Failure",
+  "Id": 1001,
+  "Username": "svarcoe",
+  "Endpoint": "UI",
+  "Message": "invalid credentials",
+  "ActivityId": "0HLFE2K0OGI1Q:00000006",
+  "TimeStamp": "2018-07-20T07:48:08Z",
+  "ProcessId": 152,
+  "LocalIpAddress": "172.21.0.5:5000",
+  "RemoteIpAddress": "172.21.0.1"
+}
+2018-07-20 07:48:08.967 +00:00 [DBG] Start authorize request protocol validation
+2018-07-20 07:48:08.985 +00:00 [DBG] 51cdc962c31c4bdb8bff7e9385e67b0c found in database: true
+2018-07-20 07:48:08.995 +00:00 [DBG] Found ["openid","profile"] identity scopes in database
+2018-07-20 07:48:09.007 +00:00 [DBG] Found ["api1"] API scopes in database
+2018-07-20 07:48:09.016 +00:00 [DBG] Found ["openid","profile"] identity scopes in database
+2018-07-20 07:48:09.027 +00:00 [DBG] Found ["api1"] API scopes in database
+2018-07-20 07:48:09.028 +00:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-20 07:48:09.042 +00:00 [DBG] 51cdc962c31c4bdb8bff7e9385e67b0c found in database: true
+2018-07-20 07:48:11.406 +00:00 [INF] AuthenticationScheme: Google was challenged.
+2018-07-20 07:48:16.174 +00:00 [INF] AuthenticationScheme: Identity.External signed in.
+2018-07-20 07:48:16.205 +00:00 [INF] AuthenticationScheme: Identity.External was successfully authenticated.
+2018-07-20 07:48:16.667 +00:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Provider": "Google",
+  "ProviderUserId": "113912396809791913668",
+  "SubjectId": "b7deb868-7f72-45fe-b949-f6e6a241e3b0",
+  "DisplayName": "Scott Varcoe",
+  "Endpoint": "UI",
+  "ActivityId": "0HLFE2K0OGI1Q:00000009",
+  "TimeStamp": "2018-07-20T07:48:16Z",
+  "ProcessId": 152,
+  "LocalIpAddress": "172.21.0.5:5000",
+  "RemoteIpAddress": "172.21.0.1"
+}
+2018-07-20 07:48:16.686 +00:00 [DBG] Augmenting SignInContext
+2018-07-20 07:48:16.688 +00:00 [DBG] Adding amr claim with value: external
+2018-07-20 07:48:16.697 +00:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-07-20 07:48:16.720 +00:00 [INF] AuthenticationScheme: Identity.External signed out.
+2018-07-20 07:48:16.751 +00:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-07-20 07:48:16.752 +00:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
+2018-07-20 07:48:16.752 +00:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2018-07-20 07:48:16.753 +00:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2018-07-20 07:48:16.754 +00:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-07-20 07:48:16.762 +00:00 [DBG] Start authorize callback request
+2018-07-20 07:48:16.771 +00:00 [DBG] User in authorize request: b7deb868-7f72-45fe-b949-f6e6a241e3b0
+2018-07-20 07:48:16.771 +00:00 [DBG] Start authorize request protocol validation
+2018-07-20 07:48:16.790 +00:00 [DBG] 51cdc962c31c4bdb8bff7e9385e67b0c found in database: true
+2018-07-20 07:48:16.803 +00:00 [DBG] Found ["openid","profile"] identity scopes in database
+2018-07-20 07:48:16.820 +00:00 [DBG] Found ["api1"] API scopes in database
+2018-07-20 07:48:16.836 +00:00 [DBG] Found ["openid","profile"] identity scopes in database
+2018-07-20 07:48:16.855 +00:00 [DBG] Found ["api1"] API scopes in database
+2018-07-20 07:48:16.855 +00:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-20 07:48:16.855 +00:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "51cdc962c31c4bdb8bff7e9385e67b0c",
+  "ClientName": "My SPA",
+  "RedirectUri": "http://localhost:4200",
+  "AllowedRedirectUris": [
+    "http://localhost:5002/callback.html",
+    "http://localhost:4200"
+  ],
+  "SubjectId": "b7deb868-7f72-45fe-b949-f6e6a241e3b0",
+  "ResponseType": "id_token token",
+  "ResponseMode": "fragment",
+  "GrantType": "implicit",
+  "RequestedScopes": "openid profile api1",
+  "State": "22DB3ytbAw6TLoOAJs7OTSmZQGtnJr4fowEyl9iK;some-state",
+  "Nonce": "22DB3ytbAw6TLoOAJs7OTSmZQGtnJr4fowEyl9iK",
+  "SessionId": "b55c61fcb4e63c2a5fc4c326f4d70b8c",
+  "Raw": {
+    "response_type": "id_token token",
+    "client_id": "51cdc962c31c4bdb8bff7e9385e67b0c",
+    "state": "22DB3ytbAw6TLoOAJs7OTSmZQGtnJr4fowEyl9iK;some-state",
+    "redirect_uri": "http://localhost:4200",
+    "scope": "openid profile api1",
+    "nonce": "22DB3ytbAw6TLoOAJs7OTSmZQGtnJr4fowEyl9iK"
+  }
+}
+2018-07-20 07:48:16.990 +00:00 [DBG] tcNCxv9pGZ+8Oy8BIv4QDaH86OZqqZ+joEY2rq++Mwk= found in database: true
+2018-07-20 07:48:17.013 +00:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2018-07-20 07:48:17.026 +00:00 [DBG] Creating Implicit Flow response.
+2018-07-20 07:48:17.049 +00:00 [DBG] Getting claims for access token for client: 51cdc962c31c4bdb8bff7e9385e67b0c
+2018-07-20 07:48:17.050 +00:00 [DBG] Getting claims for access token for subject: b7deb868-7f72-45fe-b949-f6e6a241e3b0
+2018-07-20 07:48:17.184 +00:00 [DBG] Getting claims for identity token for subject: b7deb868-7f72-45fe-b949-f6e6a241e3b0 and client: 51cdc962c31c4bdb8bff7e9385e67b0c
+2018-07-20 07:48:17.185 +00:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2018-07-20 07:48:17.207 +00:00 [INF] {
+  "Name": "Token Issued Success",
+  "Category": "Token",
+  "EventType": "Success",
+  "Id": 2000,
+  "ClientId": "51cdc962c31c4bdb8bff7e9385e67b0c",
+  "ClientName": "My SPA",
+  "RedirectUri": "http://localhost:4200",
+  "Endpoint": "Authorize",
+  "SubjectId": "b7deb868-7f72-45fe-b949-f6e6a241e3b0",
+  "Scopes": "openid profile api1",
+  "GrantType": "implicit",
+  "Tokens": [
+    {
+      "TokenType": "id_token",
+      "TokenValue": "****dcSw"
+    },
+    {
+      "TokenType": "access_token",
+      "TokenValue": "****jyGg"
+    }
+  ],
+  "ActivityId": "0HLFE2K0OGI1Q:0000000A",
+  "TimeStamp": "2018-07-20T07:48:17Z",
+  "ProcessId": 152,
+  "LocalIpAddress": "172.21.0.5:5000",
+  "RemoteIpAddress": "172.21.0.1"
+}
+2018-07-20 07:48:17.214 +00:00 [INF] Authorize endpoint response
+{
+  "SubjectId": "b7deb868-7f72-45fe-b949-f6e6a241e3b0",
+  "ClientId": "51cdc962c31c4bdb8bff7e9385e67b0c",
+  "RedirectUri": "http://localhost:4200",
+  "State": "22DB3ytbAw6TLoOAJs7OTSmZQGtnJr4fowEyl9iK;some-state",
+  "Scope": "openid profile api1"
+}
+2018-07-20 07:48:17.252 +00:00 [DBG] Augmenting SignInContext
+2018-07-20 07:48:17.252 +00:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-07-20 07:48:18.414 +00:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2018-07-20 07:48:18.423 +00:00 [DBG] Origin http://localhost:4200 is allowed: true
+2018-07-20 07:48:18.423 +00:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2018-07-20 07:48:18.423 +00:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-07-20 07:48:18.424 +00:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-07-20 07:48:18.424 +00:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-07-20 07:48:18.424 +00:00 [DBG] Start discovery request
+2018-07-20 07:48:18.467 +00:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2018-07-20 07:48:18.475 +00:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2018-07-20 07:48:18.512 +00:00 [DBG] Origin http://localhost:4200 is allowed: true
+2018-07-20 07:48:18.512 +00:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2018-07-20 07:48:18.512 +00:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-07-20 07:48:18.513 +00:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-07-20 07:48:18.513 +00:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-07-20 07:48:18.513 +00:00 [DBG] Start discovery request
+2018-07-20 07:48:18.638 +00:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2018-07-20 07:48:18.732 +00:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: http://localhost:4200
+2018-07-20 07:48:18.746 +00:00 [DBG] Origin http://localhost:4200 is allowed: true
+2018-07-20 07:48:18.746 +00:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2018-07-20 07:48:18.747 +00:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-07-20 07:48:18.747 +00:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-07-20 07:48:18.748 +00:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-07-20 07:48:18.748 +00:00 [DBG] Start key discovery request
+2018-07-20 07:48:18.855 +00:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: http://localhost:4200
+2018-07-20 07:48:18.873 +00:00 [DBG] Origin http://localhost:4200 is allowed: true
+2018-07-20 07:48:18.873 +00:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2018-07-20 07:48:18.873 +00:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-07-20 07:48:18.874 +00:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-07-20 07:48:18.874 +00:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-07-20 07:48:18.874 +00:00 [DBG] Start key discovery request
+2018-07-20 07:49:05.052 +00:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2018-07-20 07:49:05.061 +00:00 [DBG] Origin http://localhost:4200 is allowed: true
+2018-07-20 07:49:05.061 +00:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2018-07-20 07:49:05.061 +00:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-07-20 07:49:05.062 +00:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-07-20 07:49:05.062 +00:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-07-20 07:49:05.062 +00:00 [DBG] Start discovery request
+2018-07-20 07:49:05.081 +00:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2018-07-20 07:49:05.086 +00:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2018-07-20 07:49:05.095 +00:00 [DBG] Origin http://localhost:4200 is allowed: true
+2018-07-20 07:49:05.096 +00:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2018-07-20 07:49:05.096 +00:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-07-20 07:49:05.097 +00:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-07-20 07:49:05.097 +00:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-07-20 07:49:05.097 +00:00 [DBG] Start discovery request
+2018-07-20 07:49:05.174 +00:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2018-07-20 07:49:05.320 +00:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: http://localhost:4200
+2018-07-20 07:49:05.333 +00:00 [DBG] Origin http://localhost:4200 is allowed: true
+2018-07-20 07:49:05.333 +00:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2018-07-20 07:49:05.333 +00:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-07-20 07:49:05.334 +00:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-07-20 07:49:05.334 +00:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-07-20 07:49:05.334 +00:00 [DBG] Start key discovery request
+2018-07-20 07:49:05.340 +00:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: http://localhost:4200
+2018-07-20 07:49:05.360 +00:00 [DBG] Origin http://localhost:4200 is allowed: true
+2018-07-20 07:49:05.360 +00:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2018-07-20 07:49:05.361 +00:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-07-20 07:49:05.361 +00:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-07-20 07:49:05.361 +00:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-07-20 07:49:05.361 +00:00 [DBG] Start key discovery request

@@ -40,6 +40,7 @@ services:
     working_dir: /app
     environment:    
       - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_ENVIRONMENT=Development
     entrypoint: dotnet watch run
   migrator:
     build: ./todo-db

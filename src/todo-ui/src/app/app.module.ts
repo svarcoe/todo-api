@@ -2,11 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, 
-        MatCheckboxModule, 
-        MatListModule, 
-        MatToolbar, 
-        MatToolbarModule, 
+import {MatButtonModule,
+        MatCheckboxModule,
+        MatListModule,
+        MatToolbar,
+        MatToolbarModule,
         MatCardModule,
         MatIconModule} from '@angular/material';
 
@@ -37,7 +37,7 @@ import { CallbackComponent } from './callback.component';
       { path: '', component: CallbackComponent, pathMatch: 'full' },
       { path: 'home', component: TodoListComponent, canActivate: [AuthGuard] },
       { path: '**', redirectTo: '' }
-    ]
+    ])
   ],
   providers: [TodoService],
   bootstrap: [AppComponent]

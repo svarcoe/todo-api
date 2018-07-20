@@ -1,9 +1,9 @@
 # Stage 0, based on Node.js, to build and compile Angular
 FROM node as node
 WORKDIR /app
-RUN npm i -g @angular/cli@6.0.0
+RUN npm i -g @angular/cli
 COPY package.json /app/
-RUN npm install
+RUN npm i --only=dev
 COPY ./ /app/
 EXPOSE 4200 49153
 ENTRYPOINT ["ng", "serve", "--host", "0.0.0.0"]
