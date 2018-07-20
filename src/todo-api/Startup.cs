@@ -31,8 +31,8 @@ namespace Todo.Api
             services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
                .AddIdentityServerAuthentication(options =>
                {
-                   options.Authority = "https://auth:5000";
-                   options.RequireHttpsMetadata = true;
+                   options.Authority = "http://auth:5000";
+                   options.RequireHttpsMetadata = false;
                    options.ApiName = "api1";
                });
             services.AddCors();
@@ -53,7 +53,7 @@ namespace Todo.Api
             
             EnableSwagger(app);
 	        app.UseMiddleware<ErrorHandlingMiddleware>();
-            app.UseCors(builder => builder.WithOrigins("http://localhost:4200").AllowAnyMethod());
+            app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseAuthentication();
 	        app.UseMvc();
 			_log.LogInformation("Done configuring application builder.");

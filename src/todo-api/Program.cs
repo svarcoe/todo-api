@@ -15,6 +15,7 @@ namespace Todo.Api
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
+                .UseUrls("http://0.0.0.0:5001")
 	            .ConfigureLogging((hostingContext, logging) =>
 	            {
 		            logging.ClearProviders();

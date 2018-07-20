@@ -23,7 +23,8 @@ namespace todo_auth
         {
             return WebHost.CreateDefaultBuilder(args)
                     .UseStartup<Startup>()
-                    .UseUrls("http://0.0.0.0:5000")
+                    .UseUrls("http://0.0.0.0:5000")                    
+                    .UseUrls("http://auth:5000")
                     .UseSerilog((context, configuration) =>
                     {
                         configuration

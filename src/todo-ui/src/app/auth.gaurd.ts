@@ -6,7 +6,7 @@ import { OAuthService } from 'angular-oauth2-oidc';
 @Injectable()
 export class AuthGuard implements CanActivate {
 
-    constructor(private oauthService: OAuthService,) { }
+    constructor(private oauthService: OAuthService) { }
 
     canActivate() {
         if (this.oauthService.hasValidAccessToken()) {

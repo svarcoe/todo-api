@@ -16,7 +16,7 @@ services:
     depends_on:
       - db
     environment:
-      - server__HttpsRedirectionDisabled=True   
+      - server__HttpsRedirectionDisabled=False   
       - database__server=db
       - database__name=todo
       - database__user=sa

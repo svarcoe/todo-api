@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS  } from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule,
         MatCheckboxModule,
@@ -15,9 +15,10 @@ import { TodoListComponent } from './todo-list/todo-list.component';
 import { TodoService } from './todo.service';
 
 import { OAuthModule } from 'angular-oauth2-oidc';
-import { AuthGuard } from './auth-gaurd';
+import { AuthGuard } from './auth.gaurd';
 import { RouterModule } from '@angular/router';
 import { CallbackComponent } from './callback.component';
+import { TokenInterceptor } from './token.interceptor';
 
 
 @NgModule({
@@ -39,7 +40,13 @@ import { CallbackComponent } from './callback.component';
       { path: '**', redirectTo: '' }
     ])
   ],
-  providers: [TodoService],
+  providers: [
+    TodoService,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptor,
+      multi: true,
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
