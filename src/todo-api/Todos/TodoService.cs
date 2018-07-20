@@ -9,7 +9,7 @@ namespace Todo.Api.Todos
 	public interface ITodoService
 	{
 	    Task<IEnumerable<Todo>> GetAll();
-	    Task<int> Insert(Todo todo);
+	    Task<int?> Insert(Todo todo);
 	    Task Update(int id, Todo todo);
 	    Task Delete(Todo todo);
 	    Task Delete(int todoId);
@@ -41,12 +41,12 @@ namespace Todo.Api.Todos
 	        }
         }
 
-        public async Task<int> Insert(Todo todo)
+        public async Task<int?> Insert(Todo todo)
 	    {
 	        using (SqlConnection connection = _sqlConnectionFactory.GetConnection())
 	        {
 	            todo.CreatedAt = todo.ModifiedAt = DateTime.UtcNow;
-	            return await connection.InsertAsync<int>(todo);
+	            return await connection.InsertAsync<Todo>(todo);
 	        }
 	    }
 

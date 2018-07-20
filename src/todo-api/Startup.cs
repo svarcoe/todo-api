@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using IdentityServer4.AccessTokenValidation;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -26,6 +27,14 @@ namespace Todo.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            
+            services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
+               .AddIdentityServerAuthentication(options =>
+               {
+                   options.Authority = "https://auth:5000";
+                   options.RequireHttpsMetadata = true;
+                   options.ApiName = "api1";
+               });
             services.AddCors();
             services.Configure<ServerOptions>(Configuration.GetSection("server"));
             services.Configure<DatabaseOptions>(Configuration.GetSection("database"));
@@ -45,6 +54,7 @@ namespace Todo.Api
             EnableSwagger(app);
 	        app.UseMiddleware<ErrorHandlingMiddleware>();
             app.UseCors(builder => builder.WithOrigins("http://localhost:4200").AllowAnyMethod());
+            app.UseAuthentication();
 	        app.UseMvc();
 			_log.LogInformation("Done configuring application builder.");
         }

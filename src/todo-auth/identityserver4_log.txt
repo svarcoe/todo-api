@@ -1512,3 +1512,19 @@ token: '[PII is hidden by default. Set the 'ShowPII' flag in IdentityModelEventS
 2018-07-18 16:05:15.056 -07:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
 2018-07-18 16:05:15.061 -07:00 [INF] AuthenticationScheme: Identity.Application was successfully authenticated.
 2018-07-18 16:05:15.067 -07:00 [DBG] 0 persisted grants found for b7deb868-7f72-45fe-b949-f6e6a241e3b0
+2018-07-20 05:36:56.134 +00:00 [WRN] No XML encryptor configured. Key "f53793e8-b3cd-477a-ba4d-35aaff9cfd66" may be persisted to storage in unencrypted form.
+2018-07-20 05:36:56.442 +00:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-07-20 05:36:56.444 +00:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-07-20 05:36:56.445 +00:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-07-20 05:36:56.446 +00:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-07-20 05:36:56.447 +00:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-07-20 05:36:57.884 +00:00 [WRN] The 'bool' property 'UserEditable' on entity type 'IdentityExpressClaimType' is configured with a database-generated default. This default will always be used when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead so that the default will only be used when the property value is 'null'.
+2018-07-20 05:36:58.627 +00:00 [WRN] Unable to bind to http://localhost:5000 on the IPv6 loopback interface: 'Error -99 EADDRNOTAVAIL address not available'.
+2018-07-20 07:15:25.325 +00:00 [WRN] No XML encryptor configured. Key "34ab2e29-d43e-46a3-a7f4-dd086d6e0165" may be persisted to storage in unencrypted form.
+2018-07-20 07:15:25.658 +00:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-07-20 07:15:25.659 +00:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-07-20 07:15:25.660 +00:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-07-20 07:15:25.661 +00:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-07-20 07:15:25.662 +00:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-07-20 07:15:27.044 +00:00 [WRN] The 'bool' property 'UserEditable' on entity type 'IdentityExpressClaimType' is configured with a database-generated default. This default will always be used when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead so that the default will only be used when the property value is 'null'.
+2018-07-20 07:15:27.747 +00:00 [WRN] Unable to bind to http://localhost:5000 on the IPv6 loopback interface: 'Error -99 EADDRNOTAVAIL address not available'.

@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Todo.Api.Todos
 {
     [Route("api/[controller]")]
+    [Authorize]
     public class TodosController : Controller
     {
 	    private readonly ITodoService _todoService;
@@ -29,7 +31,7 @@ namespace Todo.Api.Todos
 
         // POST api/todos
         [HttpPost]
-        public async Task<int> Post([FromBody]Todo value)
+        public async Task<int?> Post([FromBody]Todo value)
         {
             return await _todoService.Insert(value);
         }

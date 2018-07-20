@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "todo-api", "src\todo-api\to
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "todo-db", "src\todo-db\todo-db.csproj", "{4CDBF1A9-FFBB-4905-8B24-E72E234D552C}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "todo-auth", "src\todo-auth\todo-auth.csproj", "{28F497F0-C09C-48A0-A791-1EA1EDACC34C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4CDBF1A9-FFBB-4905-8B24-E72E234D552C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CDBF1A9-FFBB-4905-8B24-E72E234D552C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CDBF1A9-FFBB-4905-8B24-E72E234D552C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28F497F0-C09C-48A0-A791-1EA1EDACC34C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28F497F0-C09C-48A0-A791-1EA1EDACC34C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28F497F0-C09C-48A0-A791-1EA1EDACC34C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28F497F0-C09C-48A0-A791-1EA1EDACC34C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
