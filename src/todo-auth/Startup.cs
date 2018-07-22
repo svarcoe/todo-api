@@ -89,8 +89,8 @@ namespace todo_auth
             services.AddAuthentication()
                 .AddGoogle(options =>
                 {
-                    options.ClientId = "708996912208-9m4dkjb5hscn7cjrn5u0r4tbgkbj1fko.apps.googleusercontent.com";
-                    options.ClientSecret = "wdfPY6t8H8cecgjlxud__4Gh";
+                    options.ClientId = "141503743850-s534b38nqbi1aor5nbrc984ctpdcktnv.apps.googleusercontent.com";
+                    options.ClientSecret = "UG0I9uog8UVcjUQEYfumHbVO";
                 });
 
             services.UseAdminUI();
@@ -107,6 +107,7 @@ namespace todo_auth
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+            
 
             app.UseDefaultFiles();
             app.UseStaticFiles();

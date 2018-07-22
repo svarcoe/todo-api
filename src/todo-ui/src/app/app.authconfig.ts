@@ -3,7 +3,7 @@ import {  AuthConfig } from 'angular-oauth2-oidc';
 
 export const authConfig: AuthConfig = {
     // Url of the Identity Provider
-    issuer: 'http://localhost:5000',
+    issuer: 'http://auth:5000',
     requireHttps: false,
 
     // URL of the SPA to redirect the user to after login
