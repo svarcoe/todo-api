@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.Swagger;
 using Todo.Api.Todos;
+// ReSharper disable UnusedMember.Global
 
 namespace Todo.Api
 {

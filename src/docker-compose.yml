@@ -42,6 +42,19 @@ services:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - ASPNETCORE_ENVIRONMENT=Development
     entrypoint: dotnet watch run
+  jobdashboard:
+    build: ./todo-jobdashboard
+    depends_on:
+      - db
+    environment:
+      - hangfire__server=db
+      - hangfire__name=todo
+      - hangfire__user=sa
+      - hangfire__password=P@ssword1
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - 6001:6001
   migrator:
     build: ./todo-db
     depends_on:
@@ -54,8 +67,8 @@ services:
     restart: on-failure
   db:
     image: "microsoft/mssql-server-linux"
-    logging:
-      driver: none
+    #logging:
+      #driver: none
     ports:
     - 1433:1433
     environment:
