@@ -53,6 +53,7 @@ namespace todo_auth
                 options.Events.RaiseInformationEvents = true;
                 options.Events.RaiseFailureEvents = true;
                 options.Events.RaiseSuccessEvents = true;
+                options.IssuerUri = "http://auth:5000";
             })
                 // .AddInMemoryClients(Config.GetClients())
                 // .AddInMemoryIdentityResources(Config.GetIdentityResources())

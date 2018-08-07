@@ -12,6 +12,7 @@ export class CallbackComponent implements OnInit {
 
     ngOnInit() {
         this.oauthService.loadDiscoveryDocumentAndTryLogin().then(_ => {
+          console.log('loaded discovery');
             if (!this.oauthService.hasValidIdToken() || !this.oauthService.hasValidAccessToken()) {
                 this.oauthService.initImplicitFlow('some-state');
             } else {

@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "todo-auth", "src\todo-auth\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "todo-jobdashboard", "src\todo-jobdashboard\todo-jobdashboard.csproj", "{62A0B80B-D276-4CC2-804A-ECA93336156C}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "todo-importjob", "src\todo-importjob\todo-importjob.csproj", "{BF160003-9A93-4BC5-8710-36B503AA4521}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{62A0B80B-D276-4CC2-804A-ECA93336156C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62A0B80B-D276-4CC2-804A-ECA93336156C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62A0B80B-D276-4CC2-804A-ECA93336156C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF160003-9A93-4BC5-8710-36B503AA4521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF160003-9A93-4BC5-8710-36B503AA4521}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF160003-9A93-4BC5-8710-36B503AA4521}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF160003-9A93-4BC5-8710-36B503AA4521}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

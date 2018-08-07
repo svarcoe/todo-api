@@ -1,6 +1,6 @@
 <Project>
   <PropertyGroup>
-    <BaseIntermediateOutputPath>$(MSBuildProjectDirectory)/../obj/</BaseIntermediateOutputPath>
-    <BaseOutputPath>$(MSBuildProjectDirectory)/../bin/</BaseOutputPath>
+    <BaseIntermediateOutputPath>$(MSBuildProjectDirectory)/../obj/todo-auth</BaseIntermediateOutputPath>
+    <BaseOutputPath>$(MSBuildProjectDirectory)/../bin/todo-auth</BaseOutputPath>
   </PropertyGroup>
 </Project>
