@@ -17,15 +17,15 @@ import { TodoService } from './todo.service';
 import { OAuthModule } from 'angular-oauth2-oidc';
 import { AuthGuard } from './auth.gaurd';
 import { RouterModule } from '@angular/router';
-import { CallbackComponent } from './callback.component';
 import { TokenInterceptor } from './token.interceptor';
+import { CurrentUserComponent } from './current-user/current-user.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoListComponent,
-    CallbackComponent
+    CurrentUserComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +35,6 @@ import { TokenInterceptor } from './token.interceptor';
     MatButtonModule, MatCheckboxModule, MatListModule,
     MatToolbarModule, MatCardModule, MatIconModule,
     RouterModule.forRoot([
-      { path: '', component: CallbackComponent, pathMatch: 'full' },
       { path: 'home', component: TodoListComponent, canActivate: [AuthGuard] },
       { path: '**', redirectTo: '' }
     ])

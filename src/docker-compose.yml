@@ -15,6 +15,7 @@ services:
     build: ./todo-api
     depends_on:
       - db
+      - migrator
       - auth
     environment:
       - server__HttpsRedirectionDisabled=False   

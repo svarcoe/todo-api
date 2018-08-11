@@ -7,7 +7,7 @@ import { authConfig } from './app.authconfig';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {  
+export class AppComponent {
   constructor(private oauthService: OAuthService) {
     this.oauthService.configure(authConfig);
     this.oauthService.tokenValidationHandler = new JwksValidationHandler();
@@ -24,6 +24,7 @@ export class AppComponent {
       ) {
           this.oauthService.initImplicitFlow('some-state');
       }
+      this.oauthService.loadUserProfile().then(res => console.log(res));
   });
   }
 }
