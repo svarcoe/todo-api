@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { OAuthService, JwksValidationHandler} from "angular-oauth2-oidc";
+import { OAuthService} from 'angular-oauth2-oidc';
 
 @Component({
   selector: 'app-current-user',
@@ -8,18 +8,18 @@ import { OAuthService, JwksValidationHandler} from "angular-oauth2-oidc";
 })
 export class CurrentUserComponent implements OnInit {
 
-  public user: string = '';
+  public user = '';
   constructor(private oauthService: OAuthService) { }
 
   ngOnInit() {
     this.user = this.name;
   }
   public get name() {
-    let claims = this.oauthService.getIdentityClaims();
-    let profile = this.oauthService.loadUserProfile().then(res => console.log(res));
+    const claims = this.oauthService.getIdentityClaims();
     console.log(claims);
-    if (!claims)
+    if (!claims) {
       return null;
+    }
     return claims.full_name;
   }
 }

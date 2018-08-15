@@ -91,12 +91,7 @@
               "**/node_modules/**"
             ]
           }
-        },
-        // "browser": {
-        //   "builder": 
-        //   "options":{
-        //   }
-        // }
+        }
       }
     },
     "todo-ui-e2e": {
