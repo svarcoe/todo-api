@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using todo_auth.Models;
+using Todo.Auth.Models;
 
-namespace todo_auth.Data
+namespace Todo.Auth.Data.Users
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {

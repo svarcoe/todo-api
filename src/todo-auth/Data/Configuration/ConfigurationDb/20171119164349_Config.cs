@@ -1,7 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
-using System;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace IdentityServer4EntityFramework.Migrations.IdentityServer.ConfigurationDb
+namespace Todo.Auth.Data.Configuration.ConfigurationDb
 {
     public partial class Config : Migration
     {

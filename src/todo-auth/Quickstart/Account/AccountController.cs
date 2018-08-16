@@ -2,25 +2,25 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.Services;
-using IdentityServer4.Stores;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authentication;
-using IdentityServer4.Events;
-using IdentityServer4.Models;
-using Microsoft.AspNetCore.Identity;
-using todo_auth.Models;
-using IdentityServer4.Extensions;
-using System.Security.Principal;
-using System.Security.Claims;
-using IdentityModel;
-using System.Linq;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Security.Claims;
+using System.Security.Principal;
+using System.Threading.Tasks;
+using IdentityModel;
+using IdentityServer4.Events;
+using IdentityServer4.Extensions;
+using IdentityServer4.Models;
+using IdentityServer4.Services;
+using IdentityServer4.Stores;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Todo.Auth.Models;
 
-namespace IdentityServer4.Quickstart.UI
+namespace Todo.Auth.Quickstart.Account
 {
     [SecurityHeaders]
     public class AccountController : Controller

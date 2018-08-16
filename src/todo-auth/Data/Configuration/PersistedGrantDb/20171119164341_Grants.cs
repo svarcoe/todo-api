@@ -1,7 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
-using System;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace IdentityServer4EntityFramework.Migrations.IdentityServer.PersistedGrantDb
+namespace Todo.Auth.Data.Configuration.PersistedGrantDb
 {
     public partial class Grants : Migration
     {

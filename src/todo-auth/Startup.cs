@@ -2,19 +2,20 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
+using System;
+using System.Data.SqlClient;
+using System.Reflection;
 using IdentityServer4;
-using todo_auth.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Reflection;
-using todo_auth.Data;
+using Todo.Auth.Data.Users;
+using Todo.Auth.Models;
 
-namespace todo_auth
+namespace Todo.Auth
 {
     public class Startup
     {
@@ -29,8 +30,10 @@ namespace todo_auth
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.Configure<DatabaseOptions>(Configuration.GetSection("database"));
+            DatabaseOptions dbOptions = services.BuildServiceProvider().GetService<DatabaseOptions>();
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlite(Configuration.GetConnectionString("Users")));
+                options.UseSqlite(GetConnectionString(dbOptions)));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
@@ -38,16 +41,10 @@ namespace todo_auth
 
             services.AddMvc();
 
-            services.Configure<IISOptions>(iis =>
-            {
-                iis.AuthenticationDisplayName = "Windows";
-                iis.AutomaticAuthentication = false;
-            });
+            string connectionString = GetConnectionString(dbOptions);
+            string migrationsAssembly = typeof(Startup).GetTypeInfo().Assembly.GetName().Name;
 
-            var connectionString = Configuration.GetConnectionString("Configuration");
-            var migrationsAssembly = typeof(Startup).GetTypeInfo().Assembly.GetName().Name;
-
-            var builder = services.AddIdentityServer(options =>
+            IIdentityServerBuilder builder = services.AddIdentityServer(options =>
             {
                 options.Events.RaiseErrorEvents = true;
                 options.Events.RaiseInformationEvents = true;
@@ -55,22 +52,19 @@ namespace todo_auth
                 options.Events.RaiseSuccessEvents = true;
                 options.IssuerUri = "http://auth:5000";
             })
-                // .AddInMemoryClients(Config.GetClients())
-                // .AddInMemoryIdentityResources(Config.GetIdentityResources())
-                // .AddInMemoryApiResources(Config.GetApis())
                 .AddAspNetIdentity<ApplicationUser>()
                 //this adds the config data from DB (clients, resources, CORS)
                 .AddConfigurationStore(options =>
                 {
                     options.ConfigureDbContext = db =>
-                        db.UseSqlite(connectionString,
+                        db.UseSqlServer(connectionString,
                             sql => sql.MigrationsAssembly(migrationsAssembly));
                 })
                 // this adds the operational data from DB (codes, tokens, consents)
                 .AddOperationalStore(options =>
                 {
                     options.ConfigureDbContext = db =>
-                        db.UseSqlite(connectionString,
+                        db.UseSqlServer(connectionString,
                             sql => sql.MigrationsAssembly(migrationsAssembly));
 
                     // this enables automatic token cleanup. this is optional.
@@ -97,6 +91,21 @@ namespace todo_auth
             services.UseAdminUI();
         }
 
+        private string GetConnectionString(DatabaseOptions databaseOptions)
+        {
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+            builder.DataSource = databaseOptions.Server;
+            builder.UserID = databaseOptions.UserId;
+            builder.Password = databaseOptions.Password;
+
+            if (!string.IsNullOrEmpty(databaseOptions.Name))
+            {
+                builder.InitialCatalog = databaseOptions.Name;
+            }
+
+            return builder.ToString();
+        }
+
         public void Configure(IApplicationBuilder app)
         {
             if (Environment.IsDevelopment())
@@ -116,5 +125,13 @@ namespace todo_auth
             app.UseMvcWithDefaultRoute();
             app.UseAdminUI();
         }
+    }
+
+    public class DatabaseOptions
+    {
+        public string UserId { get; set; }
+        public string Password { get; set; }
+        public string Server { get; set; }
+        public string Name { get; set; }
     }
 }
