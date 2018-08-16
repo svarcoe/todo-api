@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OAuthService} from 'angular-oauth2-oidc';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-current-user',
@@ -9,17 +10,22 @@ import { OAuthService} from 'angular-oauth2-oidc';
 export class CurrentUserComponent implements OnInit {
 
   public user = '';
-  constructor(private oauthService: OAuthService) { }
+  constructor(private oauthService: OAuthService,
+              private router: Router) { }
 
   ngOnInit() {
     this.user = this.name;
   }
   public get name() {
-    const claims = this.oauthService.getIdentityClaims();
+    const claims: any = this.oauthService.getIdentityClaims();
     console.log(claims);
     if (!claims) {
       return null;
     }
-    return claims.full_name;
+    return claims.name;
+  }
+
+  public navigateToImport() {
+      this.router.navigate(['/import']);
   }
 }

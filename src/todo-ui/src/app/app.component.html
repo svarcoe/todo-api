@@ -1,7 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <mat-toolbar color="primary">
-    <span class="left-toolbar-content" >Todo List</span>
+    <span class="left-toolbar-content" routerLink="/home" >Todo List</span>
     <button mat-mini-fab class="action-button"><mat-icon >add</mat-icon></button>
     <app-current-user></app-current-user>
 </mat-toolbar>
-<app-todo-list></app-todo-list>
+<router-outlet></router-outlet>

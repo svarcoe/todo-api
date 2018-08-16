@@ -1,3 +1,5 @@
-<p>
-  Hello, {{user}}
-</p>
+<button mat-button [matMenuTriggerFor]="menu">{{user}}</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item (click)="navigateToImport()">Import</button>
+  <button mat-menu-item>Logout</button>
+</mat-menu>

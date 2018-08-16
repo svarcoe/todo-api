@@ -30,12 +30,12 @@ namespace Todo.Api
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             
             services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
-               .AddIdentityServerAuthentication(options =>
-               {
-                   options.Authority = "http://auth:5000";
-                   options.RequireHttpsMetadata = false;
-                   options.ApiName = "api1";
-               });
+                .AddIdentityServerAuthentication(options =>
+                {
+                    options.Authority = "http://auth:5000";
+                    options.RequireHttpsMetadata = false;
+                    options.ApiName = "api1";
+                });
             services.AddCors();
             services.Configure<ServerOptions>(Configuration.GetSection("server"));
             services.Configure<DatabaseOptions>(Configuration.GetSection("database"));
