@@ -1,31 +1,16 @@
 version: '3'
 services:
+  api:
+    build: 
+      context: ./todo-api
+      dockerfile: Dockerfile.prod
   web:
-    build: ./todo-api
-    depends_on:
-      - db
-    environment:
-      - server__HttpsRedirectionDisabled=True   
-      - database__server=db
-      - database__name=todo
-      - database__user=sa
-      - database__password=P@ssword1
-    ports:
-      - 80:80
+    build: 
+      context: ./todo-ui
+      dockerfile: Dockerfile.prod
+  auth:
+    build: 
+      context: ./todo-auth
+      dockerfile: Dockerfile.prod
   migrator:
     build: ./todo-db
-    depends_on:
-      - db
-    environment:
-    - database__server=db
-    - database__name=todo
-    - database__user=sa
-    - database__password=P@ssword1
-    restart: on-failure
-  db:
-    image: "microsoft/mssql-server-linux"
-    ports:
-    - 1433:1433
-    environment:
-    - ACCEPT_EULA=Y
-    - SA_PASSWORD=P@ssword1

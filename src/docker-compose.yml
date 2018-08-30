@@ -54,7 +54,6 @@ services:
       - hangfire__name=todo
       - hangfire__user=sa
       - hangfire__password=P@ssword1
-      - DOTNET_USE_POLLING_FILE_WATCHER=1
       - ASPNETCORE_ENVIRONMENT=Development
     ports:
       - 6001:6001

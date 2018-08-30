@@ -1,4 +1,4 @@
-FROM microsoft/dotnet:2.1-sdk as build
+FROM microsoft/dotnet:2.1.3-sdk as build
 
 COPY ./todo-api.csproj /app/todo-api.csproj
 RUN dotnet restore /app/todo-api.csproj

@@ -8,7 +8,7 @@ COPY . /src
 
 RUN dotnet publish /src -o /out
 
-FROM microsoft/dotnet:2.1-runtime AS run
+FROM microsoft/dotnet:2.1-runtime-alpine AS run
 WORKDIR /app
 COPY --from=build /out /app
 COPY ./appsettings.json /app/appsettings.json

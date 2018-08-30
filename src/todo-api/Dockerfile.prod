@@ -1,4 +1,4 @@
-FROM microsoft/dotnet:2.1-sdk as build
+FROM microsoft/dotnet:2.1.401-sdk-alpine as build
 
 COPY ./todo-api.csproj /src/todo-api.csproj
 RUN dotnet restore /src/todo-api.csproj
@@ -8,11 +8,11 @@ COPY . /src
 
 RUN dotnet publish /src --output /out
 
-FROM microsoft/dotnet:2.1-sdk as runtime
+FROM microsoft/dotnet:2.1-aspnetcore-runtime-alpine AS runtime
 
 COPY --from=build /out /app
 
 WORKDIR /app
 EXPOSE 443
 EXPOSE 80
-ENTRYPOINT [ "dotnet", "run", "todo-api.dll" ]
+ENTRYPOINT ["dotnet", "todo-api.dll" ]
