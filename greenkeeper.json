@@ -1,0 +1,9 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "src/todo-ui/package.json"
+      ]
+    }
+  }
+}
